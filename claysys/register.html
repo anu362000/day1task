@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Registration</title>
+<style>
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black; 
+    height:100%;
+}
+.container{ 
+   height:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.content{
+    background-color:white;
+    width:500px;
+    height:670px;
+}
+.form-title{
+    padding:10px 40px 0px;
+}
+form{
+    padding:0px 40px;
+}
+input[type=text], [type=email]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width:100%;
+    margin: 8px 0;
+    padding:10px 0;
+    background-color:darksalmon;
+}
+input[type=date]{
+    background-color: darksalmon;
+}
+input[type=number]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+    background-color: darksalmon;
+}
+input :hover {
+    background-color: pink;
+}
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+    width:50%;
+   
+    background-color: darksalmon;
+}
+.beside{
+    display:flex;  
+    justify-content: space-between;
+}
+button{
+    
+    background-color: chocolate;
+    height:40px;
+    width:25%;
+    margin-top:15px;
+    cursor: pointer;
+    border:none;
+    border-radius:2%;
+    outline:none;
+    text-align:center;
+    font-size:16px;
+    text-decoration:none;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+button:hover{
+    background-color:red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+            <h1 class="form-title">Register Here</h1>
+            <form>
+               <input type="text" placeholder="First Name">
+			   <input type="text" placeholder="Last Name">
+			   DOB <input type="date"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			   <input type="number" placeholder="Age"><br>
+			 
+			   <div class="beside">
+                <input type="number" placeholder="Phone Number">
+                <select>
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+                <input type="email" placeholder="Email">
+				<input type="text" placeholder="Address">
+				 <div class="beside">
+				 <select>
+                    <option>State</option>
+                    <option>KARNATAKA</option>
+                    <option>KERALA</option>
+                    <option>MAHARASTRA</option>
+                    <option>TAMILNADU</option>   
+                </select>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<select>
+                    <option>City</option>
+                <optgroup label="KARNATAKA">
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hampi">Hampi</option>
+                <option value="Mysore">Mysore</option>
+            </optgroup>
+                <optgroup label="KERALA">
+                <option value="Alappuzha">Alappuzha</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Kottayam">Kottayam</option>
+            </optgroup>
+                <optgroup label="MAHARASHTRA">
+                <option value="Mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+                <option value="Thane">Thane</option>
+            </optgroup>
+            <optgroup label="TAMILNADU">
+                <option value="Chennai">Chennai</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Selam">Selam</option>
+            </optgroup>
+                </select>
+				 </div>
+				
+                <input type="text" placeholder="Username"><br>
+				<input type="text" placeholder="Password"><br>
+				<input type="text" placeholder="Confirm Password"><br>
+				
+				
+                <button type="button">Submit</button>
+            </form>
+        </div>
+ </div>
